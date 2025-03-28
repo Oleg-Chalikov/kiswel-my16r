@@ -1,6 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white text-gray-900 p-6 md:p-12 space-y-16">
@@ -9,8 +6,8 @@ export default function LandingPage() {
         <h1 className="text-4xl md:text-5xl font-bold">Электрод KISWEL MY-16R</h1>
         <p className="text-lg md:text-xl">Покрытый электрод для сварки корневого шва труб</p>
         <div className="flex justify-center gap-4 mt-4">
-          <Button>Скачать техотчёт</Button>
-          <Button variant="outline">Запросить цену</Button>
+          <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">Скачать техотчёт</button>
+          <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800" variant="outline">Запросить цену</button>
         </div>
       </section>
 
@@ -117,7 +114,7 @@ export default function LandingPage() {
           <input className="w-full p-2 border rounded" placeholder="Ваше имя" />
           <input className="w-full p-2 border rounded" placeholder="Телефон или Email" />
           <textarea className="w-full p-2 border rounded" placeholder="Сообщение" rows="4" />
-          <Button className="w-full">Отправить</Button>
+          <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800" className="w-full">Отправить</button>
         </form>
       </section>
     </div>
