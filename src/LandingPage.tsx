@@ -3,7 +3,7 @@ export default function LandingPage() {
     <div className="min-h-screen bg-black text-white font-sans p-6 md:p-12 space-y-16">
       {/* Hero Section */}
       <section className="text-center space-y-4 bg-gradient-to-b from-black to-gray-900 py-12 rounded-2xl shadow-lg">
-        <h1 className="text-4xl md:text-5xl font-bold text-yellow-400">Электрод KISWEL MY-16R</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-[#7AC943]">Электрод KISWEL MY-16R</h1>
         <p className="text-lg md:text-xl text-gray-200">Покрытый электрод для сварки корневого шва труб</p>
         <div className="flex justify-center gap-4 mt-6">
           <a
@@ -13,7 +13,7 @@ export default function LandingPage() {
           >
             Скачать техотчёт
           </a>
-          <button className="border border-yellow-400 text-yellow-400 px-6 py-2 rounded-xl hover:bg-yellow-400 hover:text-black transition">
+          <button className="border border-yellow-400 text-[#7AC943] px-6 py-2 rounded-xl hover:bg-yellow-400 hover:text-black transition">
             Запросить цену
           </button>
         </div>
@@ -21,7 +21,7 @@ export default function LandingPage() {
 
       {/* Преимущества */}
       <section className="max-w-3xl mx-auto">
-        <h2 className="text-2xl font-semibold text-yellow-400 mb-4">Преимущества KISWEL MY-16R</h2>
+        <h2 className="text-2xl font-semibold text-[#7AC943] mb-4">Преимущества KISWEL MY-16R</h2>
         <ul className="list-disc list-inside space-y-2 text-gray-100">
           <li>Лучшая альтернатива Kobelco LB-52U</li>
           <li>Испытано в России в условиях Крайнего Севера</li>
@@ -33,7 +33,7 @@ export default function LandingPage() {
 
       {/* Технические характеристики */}
       <section className="max-w-3xl mx-auto">
-        <h2 className="text-2xl font-semibold text-yellow-400 mb-4">Технические характеристики</h2>
+        <h2 className="text-2xl font-semibold text-[#7AC943] mb-4">Технические характеристики</h2>
         <ul className="list-disc list-inside space-y-2 text-gray-100">
           <li>Электрод с пониженным содержанием водорода – надёжный корень шва без пор</li>
           <li>Отличный внешний вид шва и лёгкое удаление шлака</li>
@@ -43,7 +43,7 @@ export default function LandingPage() {
 
       {/* Одобрения и аттестации */}
       <section className="max-w-3xl mx-auto">
-        <h2 className="text-2xl font-semibold text-yellow-400 mb-4">Одобрения и аттестации</h2>
+        <h2 className="text-2xl font-semibold text-[#7AC943] mb-4">Одобрения и аттестации</h2>
         <ul className="list-disc list-inside space-y-2 text-gray-100">
           <li>НАКС</li>
           <li>Транснефть</li>
@@ -76,3 +76,17 @@ export default function LandingPage() {
     </div>
   );
 }
+
+
+<section className="max-w-xl mx-auto text-center space-y-4">
+  <h2 className="text-2xl font-semibold text-[#7AC943]">Оставить заявку</h2>
+  <p>Свяжитесь с нами, чтобы узнать цену или получить консультацию</p>
+  <form className="space-y-4">
+    <input className="w-full p-2 border rounded bg-[#111] text-white border-gray-600" placeholder="Ваше имя" />
+    <input className="w-full p-2 border rounded bg-[#111] text-white border-gray-600" placeholder="Телефон или Email" />
+    <textarea className="w-full p-2 border rounded bg-[#111] text-white border-gray-600" placeholder="Сообщение" rows="4" />
+    <button className="bg-[#7AC943] text-black px-4 py-2 rounded hover:bg-green-400 w-full">
+      Отправить
+    </button>
+  </form>
+</section>
