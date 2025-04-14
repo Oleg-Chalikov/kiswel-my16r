@@ -1,4 +1,8 @@
+import { useRef } from 'react';
+
 export default function LandingPage() {
+  const formRef = useRef(null);
+
   function trackGoal(goal) {
     if (typeof ym !== 'undefined') {
       ym(100866025, 'reachGoal', goal);
@@ -24,8 +28,9 @@ export default function LandingPage() {
           >
             Скачать техотчёт
           </a>
-          <button
-            onClick={() => trackGoal('request_price')}
+          <input type="text" name="phone_confirm" style={{display: "none"}} tabIndex="-1" autoComplete="off" />
+  <button
+            onClick={() => { trackGoal('request_price'); formRef.current?.scrollIntoView({ behavior: 'smooth' }); }}
             className="border border-[#7AC943] text-[#7AC943] px-6 py-2 rounded-xl hover:bg-[#7AC943] hover:text-black transition"
           >
             Запросить цену
@@ -66,21 +71,21 @@ export default function LandingPage() {
         </ul>
       </section>
 
-      <section className="max-w-xl mx-auto text-center space-y-4">
+      <section ref={formRef} className="max-w-xl mx-auto text-center space-y-4">
         <h2 className="text-2xl font-semibold text-[#7AC943]">Оставить заявку</h2>
-        <p>Свяжитесь с нами, чтобы узнать цену или получить консультацию</p>
+        <p>Рассчитаем цену и дадим техническую консультацию за 1 рабочий день</p>
         <form
-          className="space-y-4"
-          onSubmit={(e) => {
-            e.preventDefault();
-            trackGoal('form_sent');
-            alert('Заявка отправлена!');
-          }}
-        >
+  data-honeypot="phone_confirm"
+  action="https://formsubmit.co/o.chalikov@gmail.com"
+  method="POST"
+  className="space-y-4"
+  onSubmit={() => trackGoal('form_sent')}
+>
           <input className="w-full p-2 border rounded bg-[#111] text-white border-gray-600" placeholder="Ваше имя" />
           <input className="w-full p-2 border rounded bg-[#111] text-white border-gray-600" placeholder="Телефон или Email" />
           <textarea className="w-full p-2 border rounded bg-[#111] text-white border-gray-600" placeholder="Сообщение" rows="4" />
-          <button className="bg-[#7AC943] text-black px-4 py-2 rounded hover:bg-green-400 w-full">
+          <input type="text" name="phone_confirm" style={{display: "none"}} tabIndex="-1" autoComplete="off" />
+  <button className="bg-[#7AC943] text-black px-4 py-2 rounded hover:bg-green-400 w-full">
             Отправить
           </button>
         </form>
