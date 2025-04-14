@@ -57,7 +57,7 @@ export default function LandingPage() {
         <h2 className="text-2xl font-semibold text-[#7AC943] mb-4">Одобрения и аттестации</h2>
         <ul className="list-disc list-inside space-y-2 text-gray-100">
           <li>НАКС</li>
-          <li>Транснефть</li>
+          <li>ТРАНСНЕФТЬ</li>
           <li>ABS — 3Y H10</li>
           <li>BV — 3Y H10</li>
           <li>DNV — 3Y H10</li>
