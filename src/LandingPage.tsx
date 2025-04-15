@@ -1,3 +1,4 @@
+
 import { useRef } from "react";
 
 export default function LandingPage() {
@@ -33,19 +34,34 @@ export default function LandingPage() {
   method="POST"
   data-honeypot="phone_confirm"
   className="space-y-4"
-
-          action="https://formsubmit.co/o.chalikov@gmail.com"
-          method="POST"
-          data-honeypot="phone_confirm"
-          className="space-y-4"
-        >
-          <input type="hidden" name="_next" value="https://kiswel-my16r.vercel.app/thank-you.html" />
-  <input type="text" name="name" placeholder="Ваше имя" className="w-full p-2 border rounded text-black" required />
-          <input type="text" name="contact" placeholder="Телефон или Email" className="w-full p-2 border rounded text-black" required />
-          <textarea name="message" placeholder="Сообщение" rows="4" className="w-full p-2 border rounded text-black" required></textarea>
-          <input type="text" name="phone_confirm" style={{ display: "none" }} tabIndex="-1" autoComplete="off" />
-          <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 w-full">Отправить</button>
-        </form>
+>
+  <input type="hidden" name="_next" value="https://kiswel-my16r.vercel.app/thank-you.html" />
+  <input
+    type="text"
+    name="name"
+    placeholder="Ваше имя"
+    className="w-full p-2 border rounded text-white bg-yellow-200"
+    required
+  />
+  <input
+    type="text"
+    name="contact"
+    placeholder="Телефон или Email"
+    className="w-full p-2 border rounded text-white bg-yellow-200"
+    required
+  />
+  <textarea
+    name="message"
+    placeholder="Сообщение"
+    rows="4"
+    className="w-full p-2 border rounded text-white bg-white"
+    required
+  ></textarea>
+  <input type="text" name="phone_confirm" style="display:none" tabIndex="-1" autoComplete="off" />
+  <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 w-full">
+    Отправить
+  </button>
+</form>
       </section>
     </div>
   );
