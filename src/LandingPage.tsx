@@ -29,12 +29,18 @@ export default function LandingPage() {
         <h2 className="text-2xl font-semibold text-green-500">Оставить заявку</h2>
         <p className="text-gray-300">Рассчитаем цену и дадим техническую консультацию за 1 рабочий день</p>
         <form
+  action="https://formsubmit.co/o.chalikov@gmail.com"
+  method="POST"
+  data-honeypot="phone_confirm"
+  className="space-y-4"
+
           action="https://formsubmit.co/o.chalikov@gmail.com"
           method="POST"
           data-honeypot="phone_confirm"
           className="space-y-4"
         >
-          <input type="text" name="name" placeholder="Ваше имя" className="w-full p-2 border rounded text-black" required />
+          <input type="hidden" name="_next" value="https://kiswel-my16r.vercel.app/thank-you.html" />
+  <input type="text" name="name" placeholder="Ваше имя" className="w-full p-2 border rounded text-black" required />
           <input type="text" name="contact" placeholder="Телефон или Email" className="w-full p-2 border rounded text-black" required />
           <textarea name="message" placeholder="Сообщение" rows="4" className="w-full p-2 border rounded text-black" required></textarea>
           <input type="text" name="phone_confirm" style={{ display: "none" }} tabIndex="-1" autoComplete="off" />
