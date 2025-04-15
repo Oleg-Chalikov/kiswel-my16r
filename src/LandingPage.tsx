@@ -34,9 +34,9 @@ export default function LandingPage() {
           data-honeypot="phone_confirm"
           className="space-y-4"
         >
-          <input type="text" name="name" placeholder="Ваше имя" className="w-full p-2 border rounded" required />
-          <input type="text" name="contact" placeholder="Телефон или Email" className="w-full p-2 border rounded" required />
-          <textarea name="message" placeholder="Сообщение" rows="4" className="w-full p-2 border rounded" required></textarea>
+          <input type="text" name="name" placeholder="Ваше имя" className="w-full p-2 border rounded text-black" required />
+          <input type="text" name="contact" placeholder="Телефон или Email" className="w-full p-2 border rounded text-black" required />
+          <textarea name="message" placeholder="Сообщение" rows="4" className="w-full p-2 border rounded text-black" required></textarea>
           <input type="text" name="phone_confirm" style={{ display: "none" }} tabIndex="-1" autoComplete="off" />
           <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 w-full">Отправить</button>
         </form>
