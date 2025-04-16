@@ -1,1 +1,0 @@
-export default function App() { return <h1>Электрод KISWEL MY-16R</h1>; }
