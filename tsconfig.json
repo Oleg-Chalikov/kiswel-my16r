@@ -1,15 +1,12 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "strict": true,
-    "jsx": "react-jsx",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"]
-  },
-  "include": ["src"]
-}
+      "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "jsx": "react-jsx",
+        "strict": true,
+        "esModuleInterop": true,
+        "lib": ["DOM", "DOM.Iterable", "ESNext"]
+      },
+      "include": ["src"]
+    }
