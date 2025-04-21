@@ -1,4 +1,8 @@
 export default function LandingPage() {
+  const scrollToContact = () => {
+    const element = document.getElementById('contact');
+    if (element) element.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <div className="min-h-screen bg-black text-white font-sans p-6 md:p-12 space-y-16">
       <section className="text-center space-y-4 py-12 rounded-2xl">
@@ -47,7 +51,7 @@ export default function LandingPage() {
         <h2 className="text-2xl font-semibold text-[#7AC943] mb-4">Одобрения и аттестации</h2>
         <ul className="list-disc list-inside space-y-2 text-gray-100">
           <li>НАКС</li>
-          <li>Транснефть</li>
+          <li>ТРАНСНЕФТЬ</li>
           <li>ABS — 3Y H10</li>
           <li>BV — 3Y H10</li>
           <li>DNV — 3Y H10</li>
@@ -57,8 +61,8 @@ export default function LandingPage() {
       </section>
 
       <section className="max-w-xl mx-auto text-center space-y-4">
-        <h2 className="text-2xl font-semibold text-[#7AC943]">Оставить заявку</h2>
-        <p>Свяжитесь с нами, чтобы узнать цену или получить консультацию</p>
+        <h2 className="text-2xl font-semibold text-[#7AC943]">Обратная связь</h2>
+        <p>Рассчитаем цену и дадим техническую консультацию в течение 1-ого рабочего дня</p>
         <form className="space-y-4">
           <input className="w-full p-2 border rounded bg-[#111] text-white border-gray-600" placeholder="Ваше имя" />
           <input className="w-full p-2 border rounded bg-[#111] text-white border-gray-600" placeholder="Телефон или Email" />
