@@ -1,9 +1,4 @@
 export default function LandingPage() {
-  const scrollToContact = () => {
-    const el = document.getElementById("contact");
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <div className="min-h-screen bg-black text-white font-sans p-6 md:p-12 space-y-16">
       <section className="text-center space-y-4 py-12 rounded-2xl">
@@ -28,7 +23,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section className="max-w-3xl mx-auto">
+      <section id="contact" className="max-w-3xl mx-auto">
         <h2 className="text-2xl font-semibold text-[#7AC943] mb-4">Преимущества KISWEL MY-16R</h2>
         <ul className="list-disc list-inside space-y-2 text-gray-100">
           <li>Лучшая альтернатива Kobelco LB-52U</li>
@@ -39,7 +34,7 @@ export default function LandingPage() {
         </ul>
       </section>
 
-      <section className="max-w-3xl mx-auto">
+      <section id="contact" className="max-w-3xl mx-auto">
         <h2 className="text-2xl font-semibold text-[#7AC943] mb-4">Технические характеристики</h2>
         <ul className="list-disc list-inside space-y-2 text-gray-100">
           <li>Электрод с пониженным содержанием водорода – надёжный корень шва без пор</li>
@@ -48,7 +43,7 @@ export default function LandingPage() {
         </ul>
       </section>
 
-      <section className="max-w-3xl mx-auto">
+      <section id="contact" className="max-w-3xl mx-auto">
         <h2 className="text-2xl font-semibold text-[#7AC943] mb-4">Одобрения и аттестации</h2>
         <ul className="list-disc list-inside space-y-2 text-gray-100">
           <li>НАКС</li>
